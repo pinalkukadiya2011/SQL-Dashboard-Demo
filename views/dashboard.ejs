@@ -1,0 +1,42 @@
+<form method="get" >
+
+    <table border="2">
+        <tr>
+            <th colspan="9">
+                INFORMATION
+            </th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PASSWORD</th>
+            <th>CITY</th>
+            <th>HOBBY</th>
+            <th>CONTACT_NO</th>
+            <th>ADDRESS</th>
+            <th>DATE OF BIRTH</th>
+            
+           
+        </tr>
+    <% results.forEach(function(user){%>
+    
+        <tr>
+          <td><%= user.id%></td>
+          <td><%= user.name%></td>
+          <td><%= user.email%></td>
+          <td><%= user.password%></td>
+          <td><%= user.city%></td>
+          <td><%= user.hobby%></td>
+          <td><%= user.contact_no%></td>
+          <td><%= user.address%></td>
+          <td><%= user.dob%></td>
+          
+        
+        </tr>
+    
+    
+    
+    <% }) %>
+    </table>
+    </form>
